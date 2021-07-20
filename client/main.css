@@ -1,0 +1,66 @@
+body {
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.bkImg{
+	background: #fafafa44; /*rgba*/
+	background-size: fixed;
+}
+#login-buttons a{
+	text-decoration: none;
+}
+.edColor{
+	padding: 5px;
+}
+.adColor{
+	padding: 5px;
+}
+.uniform{
+	padding:20px;
+	margin: 5px;
+	background-color: #ffffff88;
+}
+.compTask{
+	padding:10px;
+	margin-top: 2rem;
+}
+.design{
+	background-color: #343a40;
+}
+.sideBar a:hover{
+	background-color: #555;
+	color: white;
+}
+.txtColor {
+	color: white;
+}
+.pill-nav a{
+	display: block;
+	color: grey;
+	padding: 14px;
+	text-decoration: none;
+	font-size: 17px;
+	border-radius: 5px;
+}
+.pill-nav a.active{
+  background-color: #ff0000c4;
+  color: white;	
+}
+li{
+	list-style: none;
+}
+
+[name=tasksName]{
+    border:none;
+    font-family: "Times New Roman";
+    font-size: 100%;
+    padding:0.15em;
+    background-color: transparent;
+}
+
+.checked [name=tasksName]{
+    text-decoration: line-through;
+    color:grey;
+    font-size: 1.5rem;
+}

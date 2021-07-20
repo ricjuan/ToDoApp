@@ -1,0 +1,54 @@
+<template name="mainBody" >
+  <main role="main">
+    <div class="container" id="mainBody">
+      <div class="row">
+        <div class="col compTask">
+          <input type="radio"> Show completed tasks
+        </div>
+      </div>
+      <div class="row ">
+      {{#each publicTask}}
+        <div class="col-12 uniform border border-dark " id={{_id}}>
+          <li class="{{checked}}">
+            <input type="checkbox" {{checked}} > 
+            <input type="text " value="{{task}}" name="tasksName" style= "font-size: 1.5rem; " disabled>
+            <div class="col-2 float-right">
+              <i class="float-right fa fa-trash js-delTask adColor"></i>
+            </div>
+            <div class="row justify-content-between">
+              {{#if userField}}
+              <medium class="text-muted">by: {{createdBy}}</medium>
+              {{/if}}
+            </div>
+          </li>
+        </div>
+      {{/ each}}
+      </div>       
+    </div>
+  </main>
+</template> <!-- mainBody -->
+
+
+
+<!-- <div class="row">
+          <div class="col-9">
+            <h1>Main Content</h1>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+          </div>
+          <div class="card border-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header<i class="float-right fa fa-edit js-edit edColor"></i></div>
+            <div class="card-body text-dark">
+              <h5 class="card-title">Dark card title</h5>
+              <p class="card-text"> 
+                  <input type="checkbox">
+              </p>
+              <i class="float-right fa fa-plus js-add adColor"></i>
+            </div>
+          </div>  
+          </div>
+          <div class="col-3">
+            <h2>Other Content</h2>
+          </div>
+        </div> -->
